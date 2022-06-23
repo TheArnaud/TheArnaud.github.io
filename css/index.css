@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+}
+
+/****************** Design du header *********************/
+
+#header{
+    background-color: #880000;
+    display: flex;
+    width: 100%;
+
+}
+
+
+.logo {
+    max-width: 10vw;
+    max-height: 8vw;
+    padding-left: 1%;
+    }
+
+#title {
+    color: rgb(255, 255, 255);
+    font-size: 1.8vw;
+    text-align: center;
+    padding-top: 0.5em;
+    padding-left: 12%;
+}
+
+.gras{
+    font-weight: 1000;
+}
+
+#subtitle{
+    font-size: 1.4vw;
+    color: rgb(255, 255, 255);
+}
+
+/****************** footer*********************/
+
+.footer{
+    margin-top: 10%;
+}
+
+/****************************************** navbar ********************************/
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+ }
+
+
+.navbar-custom {
+    background: rgb(67,67,67);
+    background: linear-gradient(90deg, rgba(67,67,67,1) 12%, rgba(2,1,17,1) 50%, rgba(67,67,67,1) 88%);
+    }
+.navbar-custom .navbar-nav .nav-link {
+        color: rgb(255, 255, 255);
+    }
+
+.navbar-custom .nav-item:hover .nav-link {
+        color: #a70202;
+    }
+
+.custom-toggler.navbar-toggler {
+        border-color: #ffffff;
+    } 
+    
+.custom-toggler .navbar-toggler-icon {
+    background-image: url(
+    "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+
+.navbar-nav.navbar-center {
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    font-size: 110%;
+    }
+
+/****************************************** titre présentation ********************************/
+
+.excellez{
+    margin-top: 4%;
+}
+
+.excellezLEFT{
+    color:#880000;
+    font-size: 3.5vw;
+    font-weight: 600;
+}
+
+.excellezSOUS{
+    font-size: 0.9vw;
+    text-align: center;
+    margin-top: 1%;
+}
+
+.excellezRIGHT{
+    background-color: white;
+    border-radius: 2%;
+    height: 16vw;
+    text-align: center;
+    font-weight: 600;
+    box-shadow: 12px 12px 2px 1px rgba(66, 66, 136, 0.2);
+}
+
+#titreRésultat{
+    color:#880000;
+    font-size: 1.4vw;
+    padding-top: 1.5% ;
+}
+
+#ecole1{
+    font-size: 1.1vw;
+    padding-top: 1.5%;
+}
+#stat1{
+    color:#880000;
+    font-size: 1.2vw;
+    padding-top: 1.5%;
+}
+
+#ecole2{
+    font-size: 1.1vw;
+    padding-top: 1.5%;
+    padding-right: 20%;
+}
+#stat2{
+    color:#880000;
+    font-size: 1.2vw;
+    padding-top: 1.5%;
+    padding-right: 20%;
+}
+
+#ecole3{
+    font-size: 1.1vw;
+    padding-left: 30%;
+    position: relative;
+
+}
+#stat3{
+    color:#880000;
+    font-size: 1.2vw;
+    padding-top: 1.5%;
+    padding-left: 25%;
+}
+
+/****************************************** main ********************************/
+
+.mainTitre{
+    padding-top: 5%;
+    padding-bottom: 3%;
+    font-size: 3.5vw;
+    font-weight: 600;
+    color:#880000;
+    text-align: center;
+}
+
+.présentation{
+    text-align: left;
+    background-color: white;
+    padding: 2%;
+    padding-left: 80px;
+    border-radius: 2%;
+    padding-left: 50px;
+}
+
+.présentationLEFT{
+    border-right-style: solid;
+    border-width: thin;
+}
+
+.soustitres{
+    font-size: 1.5vw;
+    font-weight: 600;
+    color:#880000;
+    text-decoration: underline;
+}
+
+.card { border-radius: .7rem; }
