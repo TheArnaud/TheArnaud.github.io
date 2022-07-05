@@ -11,7 +11,6 @@ body {
 
 }
 
-
 .logo {
     max-width: 10vw;
     max-height: 8vw;
@@ -35,6 +34,33 @@ body {
     color: rgb(255, 255, 255);
 }
 
+.barre{
+    display : flex;
+    justify-content:space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#barreGauche{
+    background-image: -webkit-gradient(
+          linear, center center, left center, from(#948e8e),
+          to(rgba(255, 255, 255, 0))
+        );
+    width: 250px;
+    height: 3px;
+    margin:20px;
+}
+
+#barreDroite{
+    background-image: -webkit-gradient(
+          linear, center center, right center, from(#948e8e),
+          to(rgba(255, 255, 255, 0))
+        );
+    width: 250px;
+    height: 3px;
+    margin:20px;
+}
+
 /****************** footer*********************/
 
 .footer{
@@ -50,15 +76,22 @@ body {
 
 
 .navbar-custom {
-    background: rgb(67,67,67);
-    background: linear-gradient(90deg, rgba(67,67,67,1) 12%, rgba(2,1,17,1) 50%, rgba(67,67,67,1) 88%);
+    background: rgb(48,44,44);
+    background: linear-gradient(90deg, rgba(48,44,44,1) 20%, rgba(110,105,105,1) 50%, rgba(48,44,44,1) 80%); 
+    
     }
+
+.container-fluid.text-center{
+    border-bottom: 2px dashed #948e8e;
+    border-top: 2px dashed #948e8e;
+
+}
 .navbar-custom .navbar-nav .nav-link {
         color: rgb(255, 255, 255);
     }
 
 .navbar-custom .nav-item:hover .nav-link {
-        color: #a70202;
+        color: #e60000;
     }
 
 .custom-toggler.navbar-toggler {
@@ -78,83 +111,18 @@ body {
     font-size: 110%;
     }
 
-/****************************************** titre présentation ********************************/
 
-.excellez{
-    margin-top: 4%;
-}
-
-.excellezLEFT{
-    color:#880000;
-    font-size: 3.5vw;
-    font-weight: 600;
-}
-
-.excellezSOUS{
-    font-size: 0.9vw;
-    text-align: center;
-    margin-top: 1%;
-}
-
-.excellezRIGHT{
-    background-color: white;
-    border-radius: 2%;
-    height: 16vw;
-    text-align: center;
-    font-weight: 600;
-    box-shadow: 12px 12px 2px 1px rgba(66, 66, 136, 0.2);
-}
-
-#titreRésultat{
-    color:#880000;
-    font-size: 1.4vw;
-    padding-top: 1.5% ;
-}
-
-#ecole1{
-    font-size: 1.1vw;
-    padding-top: 1.5%;
-}
-#stat1{
-    color:#880000;
-    font-size: 1.2vw;
-    padding-top: 1.5%;
-}
-
-#ecole2{
-    font-size: 1.1vw;
-    padding-top: 1.5%;
-    padding-right: 20%;
-}
-#stat2{
-    color:#880000;
-    font-size: 1.2vw;
-    padding-top: 1.5%;
-    padding-right: 20%;
-}
-
-#ecole3{
-    font-size: 1.1vw;
-    padding-left: 30%;
-    position: relative;
-
-}
-#stat3{
-    color:#880000;
-    font-size: 1.2vw;
-    padding-top: 1.5%;
-    padding-left: 25%;
-}
 
 /****************************************** main ********************************/
 
 .mainTitre{
-    padding-top: 5%;
-    padding-bottom: 3%;
-    font-size: 3.5vw;
+    margin-bottom: 3%;
+    font-size: 2vw;
     font-weight: 600;
-    color:#880000;
-    text-align: center;
+    background-color:#880000;
+    color:white;
+    text-align: left;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
 }
 
 .présentation{
@@ -169,13 +137,112 @@ body {
 .présentationLEFT{
     border-right-style: solid;
     border-width: thin;
+
 }
 
 .soustitres{
     font-size: 1.5vw;
     font-weight: 600;
     color:#880000;
-    text-decoration: underline;
+
 }
+
+/****************************************** puces ********************************/
+
+
+ol {
+    counter-reset: compt;
+}
+
+li.compt,
+li.compt-pres {
+    list-style-type: none;
+    counter-increment: compt;
+    margin-bottom: 15px;
+}
+
+
+/*puce a carré */
+
+li.compt:before {
+    content: counter(compt);
+    padding: 5px 10px;
+    margin-right: 8px;
+    vertical-align: top;
+    font-weight: bold;
+    font-size: 0.8em;
+    color: white;
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+}
+
+
+/*puce à rond*/
+
+li.compt-pres:before {
+    content: counter(compt);
+    padding: 7px 8.5px;
+    margin-right: 8px;
+    vertical-align: top;
+    font-weight: bold;
+    font-size: 0.8em;
+    color: white;
+    display: inline-block;
+    width: 10px;
+}
+
+li.compt-pres:before {
+    /*
+	-moz-border-radius: 60px;
+	border-radius: 60px;
+	background:#660000;
+	*/
+    padding: 6.1px 9.5px;
+    margin-right: 6px;
+    background: url('../img/rond.png') no-repeat;
+}
+
+#acm-gauche li.compt:before {
+    background: #660000;
+}
+
+#acm-droite li.compt:before {
+    background: #000066;
+}
+
+#ssm-gauche li.compt:before {
+    background: #660000;
+}
+
+#ssm-droite li.compt:before {
+    background: #000066;
+}
+
+#acm-mid li.compt:before {
+    background: #660000;
+}
+
+
+/* permet de justifier le titre à gauche dans les listes ol */
+
+p.titleol,
+p.titleol-cadre {
+    display: inline-block;
+    margin: 0;
+    margin-top: 2px;
+}
+
+p.titleol {
+    width: 340px;
+}
+
+P.titleol-cadre {
+    width: 289px;
+}
+
+
+
+/****************************************** avis ********************************/
 
 .card { border-radius: .7rem; }

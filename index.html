@@ -48,7 +48,11 @@
             <img src="img/lion.jpg" alt="logo" class="logo">
             <div id="title">
               <span class="gras">PCES</span> - <span class="gras">P</span>réparation <span class="gras">C</span>oncours <span class="gras">E</span>nseignement <span class="gras">S</span>upérieur - OPTIMUM
-              <br><span id="subtitle">Science Po et Écoles de commerce</span>
+              <div class="container barre">
+                <div id="barreGauche"></div>
+                <br><span id="subtitle">Science Po et Écoles de commerce</span>
+                <div id="barreDroite"></div>
+              </div>
             </div>
         </div>
 
@@ -125,48 +129,47 @@
             </div>
         </nav>
 
-        <div class="container excellez">
-          <div class="row">
-            <div class="col-5 excellezLEFT">
-              Excellez avec les meilleurs professeurs<br>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="4000">
+              <img src="img/slide/results2.jpg" class="d-block w-100" alt="...">
+          
             </div>
-            <div class="col-6 excellezRIGHT">
-              <div id="titreRésultat">Résultat 2021 : </div>
-
-                <div id="ecole1">IESEG - ESSCA - ESSEC</div>
-                  <div id="stat1">94%<br>d'admis</div>
-             <div class="row">
-              <div class="col">
-                <div class="container" id="ecole2">Science Politique</div>
-                  <div id="stat2">94%<br>d'admis</div></div>
-                <div class="col">
-                <div id="ecole3">SESAME/ACCES</div>
-                  <div id="stat3">94%<br>d'admis</div></div>
-             </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img src="img/slide/sciencespo.png" class="d-block w-100" alt="...">
+           
+            </div>
+            <div class="carousel-item " data-bs-interval="3000">
+              <img src="img/slide/slide1.png" class="d-block w-100" alt="...">
+              
             </div>
           </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
 
-        <div class="container excellezSOUS" style="font-family : Inter">
-          <div class="row">
-            <div class="col-4">
-            Établissement privé d’enseignement supérieur enregistré au Rectorat de Paris <br>
-            Préparation aux concours et accompagnement scolaire du lycée aux classes prépas
-            </div>
-          </div>
-        </div>
-
-        <div class="container mainTitre">
+        <div class="container-fluid mainTitre">
           Présentation
         </div>
 
         <div class="container présentation" style="font-family : Inter">
           <div class="row">
-            <div class="col-6 présentationLEFT">
-              <span class="soustitres">L'établisemment :</span>
+            <div class="col-6 présentationLEFT" style="padding-left: 4%; padding-right: 4%;">
+              <span class="soustitres">Présentation</span>
               <br><br>
               Notre établissement est un organisme d'Enseignement Supérieur spécialisé
-              dans la préparation à trois types de concours : <br>
+              dans la préparation à trois types de concours :
               <ul style="padding-top:3%">
                 <li>Les concours des Ecoles de Commerce post-baccalauréat : SESAME et ACCES.</li>
                 <li>Les concours des écoles d'ingénieurs post-baccalauréat : ADVANCE, PUISSANCE ALPHA, AVENIR et GEIPI POLYTECH.</li>
@@ -204,40 +207,41 @@
               </p>
 
             </div>
-            <div class="col-6" style="font-family : Inter">
-              <span class="soustitres">Méthodologie & Résultats</span>
-              <br><br>
-              <div id="ssm-droite">
+
+
+            <div class="col-6" style="font-family : Inter;">
+              <div class="soustitres" style="text-align:right ;padding-right:13%;color:#000066;">Une méthodologie, des Résultats</div>
+              <br>
+              <div id="ssm-droite" style="padding-left: 4%; padding-right: 4%;">
                 <p>
                   Les résultats obtenus par nos étudiants nous positionnent en tête des classements Sésame/Accès et Sciences Po.
                 </p>
                 
-                <b>Ces résultats sont le fruit des 4 facteurs qui font la spécificité de nos préparations :</b>
+                <b>Ces résultats sont le fruit des 4 facteurs qui font la spécificité de nos préparations :</b><br><br>
                 
                     <ol>
                   <li class="compt">
-                    <p class="titleol"><b>La Spécialisation </b>
+                    <p class="titleol"><b>La spécialisation</b><br><br>
                     </p><p>
                       Nous ne préparons qu'à trois types de concours : les Ecoles de Commerce, les Ecoles d'Ingénieurs et Sciences Po. <b>Se spécialiser est un choix :</b> celui de l'excellence qui rend nos préparations totalement ciblées sur ces concours.
                     </p>
                   </li>
                   <li class="compt">
-                    <p class="titleol"><b>Un Enseignement d'Excellence </b>
+                    <p class="titleol"><b>Un Enseignement d'Excellence </b><br><br>
                     </p><p>
                       Les professeurs qui interviennent dans nos stages ont :
                     </p>
                     <ul>
                       <li>une connaissance approfondie des épreuves</li>
                       <li>enseignent en classes préparatoires et dans les Grandes Ecoles</li>
-                          
-                      <li><b>sont des spécialistes reconnus de leurs matières</b></li>
+                      <li><b>sont des spécialistes reconnus de leurs matières</b></li><br>
                     </ul>
                     <p>
                       Ils sont reconnus pour leurs compétences mais aussi pour leur capacité à faire passer le savoir.
                     </p>
                   </li>
                   <li class="compt">
-                    <p class="titleol"><b>La Proximité de l'Encadrement </b>
+                    <p class="titleol"><b>La Proximité de l'Encadrement </b><br><br>
                     </p><p>
                       Les élèves ne peuvent donner le meilleur de leurs capacités que s'ils sont guidés et suivis. Cela passe par une forte disponibilité des enseignants et de l'ensemble de notre équipe pédagogique et administrative.
                     </p>
@@ -250,7 +254,7 @@
                       
                   </li>
                   <li class="compt">
-                    <p class="titleol"><b>Le Suivi </b>
+                    <p class="titleol"><b>Le Suivi </b><br><br>
                     </p><p>
                       Le support apporté aux élèves ne se réduit pas aux périodes de stages ou au cours. Les élèves sont suivis du jour où ils ont décidé de présenter les concours jusqu'au jour des résultats.<br>
                       Ce suivi se présente sous diverses formes (toujours optionnelles bien évidemment) : 
