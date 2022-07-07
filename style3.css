@@ -1,0 +1,695 @@
+body {
+    font-size: 12pt;
+    font-weight: 400;
+    background: #E0E0E0;
+    margin: auto;
+    width: 1000px;
+}
+
+
+/****************** Design du header *********************/
+
+#header {
+    height: 377px;
+}
+
+#banniere {
+    height: 135px;
+}
+
+a img {
+    border: none;
+}
+
+
+/* Mise en place du menu en haut */
+
+#menu1 {
+    height: 42px;
+    position: relative;
+    top: -16px;
+    list-style: none;
+    background-color: #707070;
+    background: url('../img/menu1/menu.png') no-repeat;
+    z-index: 10;
+}
+
+#menu1 a {
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+#menu1 li {
+    display: block;
+    float: left;
+    width: 132px;
+    height: 32px;
+    padding-top: 10px;
+    margin: auto;
+    text-align: center;
+    border-right: 1px solid #707070;
+    border-radius: 12px 12px 12px 12px;
+    
+    
+}
+
+#menu1 li:hover {
+    background: url('../img/menu1/menu.png');
+    
+}
+
+#menu1 a:hover {
+    color: #ff0000;
+    
+}
+
+#menu1 ul ul {
+    display: none;
+    position: relative;
+    height: 500px;
+    right: 32px;
+    top:7px;
+
+}
+
+#menu1 ul ul li {
+    background: url('../img/menu1/menu_ss_pointille.png');
+    border-bottom: 1px solid #707070;
+    
+}
+
+#menu1 ul ul li:hover {
+    background: url('../img/menu1/menu_ss_pointille.png');
+    border-radius: 10px 10px 10px 10px;
+    
+}
+
+#menu1 li:hover ul {
+    display: block;
+}
+
+.top {
+    border-radius: 12px 12px 0px 0px;
+}
+
+.bottom {
+    border-radius: 0px 0px 12px 12px;
+    
+}
+
+
+/* Fin du menu1 */
+
+
+/* Design des slides */
+
+#slides {
+    height: 200px;
+    width: 1000px;
+    position: relative;
+    top: -16px;
+}
+
+
+/* Pour les résultats */
+
+#resultats {
+    position: relative;
+    left: 32%;
+    display: block;
+    width: 360px;
+    height: 75px;
+    /* background:black; */
+    color: #fff;
+    border-radius: 5px;
+    border: 1px solid #880000;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+#resultats:hover {
+    box-shadow: 0 0 15px rgba(33, 33, 33, .2);
+}
+
+#resultats p {
+    margin: 0;
+}
+
+#resultats-titre {
+    margin: 0 auto;
+    display: block;
+    height: 30px;
+    width: 330px;
+    background: #E0E0E0;
+    color: rgb(0, 0, 0);
+    padding-top: 13px;
+}
+
+#results {
+    display: block;
+    width: 360px;
+    height: 25px;
+    padding-top: 15px;
+}
+
+.slides_container {
+    position: relative;
+    top: -16px;
+    width: 360px;
+    height: 50px;
+    z-index: 1;
+}
+
+.slides_container div.slide {
+    background: #E0E0E0;
+    color: black;
+    width: 360px;
+    height: 50px;
+    display: block;
+}
+
+div.slide p {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+
+/* Fin des slides */
+
+
+/* Image qui apparait qu'on on passe au dessus de sciences po dans le menu */
+
+img.sciencespo {
+    display: none;
+    width: 1000px;
+    height: 200px;
+    background: #FFF000;
+    position: relative;
+    top: -216px;
+    z-index: 5;
+}
+
+
+/******************* Fin du design du header **********************/
+
+
+/******************* Design du corps ************************/
+
+/* override boostrap box-sieing */
+* {
+    -webkit-box-sizing: content-box;
+       -moz-box-sizing: content-box;
+            box-sizing: content-box;
+  }
+  *:before,
+  *:after {
+    -webkit-box-sizing: content-box;
+       -moz-box-sizing: content-box;
+            box-sizing: content-box;
+  }
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    }
+
+
+.contenir{
+    background-color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 2%;
+    padding-bottom: 2%;
+    width:950px;  
+
+}
+
+
+.contenir h2{
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.flex{
+    display : flex;
+    justify-content: left;
+}
+
+.contenirSESAME{
+    background-color: white;
+    border-radius: 2%;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#corps {
+    text-align: center;
+    white-space: nowrap;
+}
+
+#titre {
+    height: 40px;
+    background: url('../../../img/titre.jpg');
+    background-color: #880000;
+    font-size: 20pt;
+    color: #fff;
+    padding-top: 4px;
+    padding-left: 20px;
+    text-align: left;
+    font-family: 'Poppins', serif;
+}
+
+
+/* Gestion des couleurs */
+
+#acm-gauche h1,
+#acm-gauche h2,
+#ssm-gauche h1,
+#ssm-gauche h2 {
+    color: #880000;
+    text-align: left;
+}
+
+#acm-mid h1,
+#acm-mid h2 {
+    color: #880000;
+    text-align: center;
+}
+
+#acm-droite h1,
+#acm-droite h2,
+#ssm-droite h1,
+#ssm-droite h2 {
+    color: #000066;
+    text-align: right;
+}
+
+
+/* Design des puces des listes numérotées */
+
+ol {
+    counter-reset: compt;
+}
+
+li.compt,
+li.compt-pres {
+    list-style-type: none;
+    counter-increment: compt;
+    margin-bottom: 15px;
+}
+
+
+/*puce a carré */
+
+li.compt:before {
+    content: counter(compt);
+    padding: 5px 10px;
+    margin-right: 8px;
+    vertical-align: top;
+    font-weight: bold;
+    font-size: 0.8em;
+    color: white;
+    display: inline-block;
+    width: 7px;
+}
+
+
+/*puce à rond*/
+
+li.compt-pres:before {
+    content: counter(compt);
+    padding: 7px 8.5px;
+    margin-right: 8px;
+    vertical-align: top;
+    font-weight: bold;
+    font-size: 0.8em;
+    color: white;
+    display: inline-block;
+    width: 10px;
+}
+
+li.compt-pres:before {
+    /*
+	-moz-border-radius: 60px;
+	border-radius: 60px;
+	background:#660000;
+	*/
+    padding: 6.1px 9.5px;
+    margin-right: 6px;
+    background: url('../img/rond.png') no-repeat;
+}
+
+#acm-gauche li.compt:before {
+    background: #660000;
+}
+
+#acm-droite li.compt:before {
+    background: #000066;
+}
+
+#ssm-gauche li.compt:before {
+    background: #660000;
+}
+
+#ssm-droite li.compt:before {
+    background: #000066;
+}
+
+#acm-mid li.compt:before {
+    background: #660000;
+}
+
+
+/* permet de justifier le titre à gauche dans les listes ol */
+
+p.titleol,
+p.titleol-cadre {
+    display: inline-block;
+    margin: 0;
+    margin-top: 2px;
+}
+
+p.titleol {
+    width: 340px;
+}
+
+P.titleol-cadre {
+    width: 289px;
+}
+
+
+/******* Cas avec sous-menu (acm)*******/
+
+
+/* Design de l'intérieur du sous-menu */
+
+#menu2 img {
+    height: 45px;
+    width: 177px;
+    border-radius: 10px;
+}
+
+#menu2 img:hover {
+    opacity: .75;
+}
+
+#menu2 {
+    display: inline-block;
+    width: 177px;
+    vertical-align: top;
+    padding-top: 10px;
+    white-space: normal;
+    position: sticky;
+    top: 7px;
+}
+
+#menu2 ul {
+    list-style: none;
+}
+
+#menu2 li {
+    display: block;
+    position: relative;
+    left: -40px;
+    /* background-color: #707070; */
+    width: 177px;
+    height: 43px;
+    margin-top: 10px;
+}
+
+#acm-gauche {
+    display: inline-block;
+    width: 380px;
+    vertical-align: top;
+    padding: 10px;
+    text-align: justify;
+    position: relative;
+    font-family: "Inter";
+    white-space: normal;
+    
+}
+
+#acm-droite {
+    display: inline-block;
+    width: 380px;
+    vertical-align: top;
+    padding: 10px;
+    text-align: justify;
+    position: relative;
+    font-family: "Inter";
+    left: -4px;
+    white-space: normal;
+    
+}
+
+#acm-mid {
+    display: inline-block;
+    width: 740px;
+    vertical-align: top;
+    padding: 10px;
+    text-align: justify;
+    position: relative;
+    top: 5px;
+    white-space: normal;
+    font-family: "Inter";
+    
+}
+
+
+/* Cas sans sous-menu (ssm)*/
+
+#ssm-gauche {
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;
+    padding-right: 50px;
+    text-align: justify;
+    top: 5px;
+    white-space: normal;
+    font-family: "Inter";
+
+}
+
+#ssm-droite {
+    
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    width: 40%;
+    /* left: -5px; */
+    padding-left: 50px;
+    text-align: justify;
+    white-space: normal;
+    font-family: "Inter";
+}
+
+
+/* Page témoignage */
+
+#contenu {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#contenu img {
+    border: 1px solid #000;
+    margin: 5px
+}
+
+.fancy img {
+    width: 300px;
+    height: 180px;
+}
+
+.fancy img:hover {
+    width: 310px;
+    height: 186px;
+}
+
+
+/* Police d'ecriture */
+
+/* Contact */
+#contact{
+    border: 1px solid #880000; 
+    border-radius: 5px; 
+    padding:5px; 
+    margin:30px;
+}
+
+/*********************** Fin du corps **********************/
+
+
+/********************* Design du Footer **********************/
+
+#footer {
+    position: relative;
+    height: 50px;
+    background: url('../img/footer.jpg');
+    top: 10px;
+    padding: auto;
+    text-align: right;
+}
+
+#footer p {
+    float: left;
+    position: relative;
+    left: 20px;
+    top: 4px;
+    color: #fff;
+    font-size: 10pt;
+}
+
+#footer ul {
+    display: block;
+}
+
+#footer li {
+    display: inline-block;
+    position: relative;
+    top: 15px;
+    left: -20px;
+    color: #fff;
+    font-size: 10pt;
+}
+
+#footer li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#footer li a:hover {
+    text-decoration: underline;
+}
+
+/********************* Design formulaire inscription **********************/
+
+
+/* Full-width input fields */
+.testo input[type=text] {
+  width: 69%;
+  padding: 10px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: 1px solid black;
+  background: #f1f1f1;
+}
+
+.testo input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #880000;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 40%;
+  opacity: 0.9;
+  margin-left: 120px;
+
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+
+}
+
+
+.testo textarea {
+    width: 100%; /* Full width */
+    height: 80px;
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    
+  }
+
+/********************* Design formulaire inscription INGENIEUR**********************/
+
+  .testo2 label {    
+    display: inline-block;
+    width: 100px;
+    text-align: left;
+    }
+
+/* Full-width input fields */
+.testo2 input[type=text] {
+    width: 69%;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: 1px solid black;
+    background: #f1f1f1;
+  }
+  
+  .testo2 input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  
+  
+  /* Set a style for the submit/register button */
+    .registerbtn2 {
+    background-color: #880000;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    opacity: 0.9;
+  }
+  
+  .registerbtn:hover {
+    opacity:1;
+  }
+  
+  
+  /* Set a grey background color and center the text of the "sign in" section */
+  .signin {
+    background-color: #f1f1f1;
+    text-align: center;
+  
+  }
+  
+  
+  .testo2 textarea {
+      width: 100%; /* Full width */
+      height: 80px;
+      padding: 12px; /* Some padding */ 
+      border: 1px solid #ccc; /* Gray border */
+      border-radius: 4px; /* Rounded borders */
+      box-sizing: border-box; /* Make sure that padding and width stays in place */
+      margin-top: 6px; /* Add a top margin */
+      margin-bottom: 16px; /* Bottom margin */
+      resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
