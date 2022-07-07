@@ -68,6 +68,7 @@ a img {
     position: relative;
     height: 500px;
     right: 32px;
+    top:7px;
 
 }
 
@@ -79,6 +80,7 @@ a img {
 
 #menu1 ul ul li:hover {
     background: url('../img/menu1/menu_ss_pointille.png');
+    border-radius: 10px 10px 10px 10px;
     
 }
 
@@ -87,11 +89,11 @@ a img {
 }
 
 .top {
-    border-top: 1px solid #707070;
+    border-radius: 12px 12px 0px 0px;
 }
 
 .bottom {
-    border-radius: 0 0 10px 10px;
+    border-radius: 0px 0px 12px 12px;
     
 }
 
@@ -217,6 +219,7 @@ p {
 
 
 .contenir{
+    background-color: white;
     margin-top: 15px;
     margin-bottom: 15px;
     border-radius: 2%;
@@ -241,7 +244,10 @@ p {
 }
 
 .contenirSESAME{
-
+    background-color: white;
+    border-radius: 2%;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
 #corps {
@@ -428,11 +434,6 @@ P.titleol-cadre {
     position: relative;
     font-family: "Inter";
     white-space: normal;
-
-    background-color: white;
-    border-radius: 10px;
-    margin-top: 10px;
-    margin-right: 10px;
     
 }
 
@@ -446,10 +447,6 @@ P.titleol-cadre {
     font-family: "Inter";
     left: -4px;
     white-space: normal;
-
-    background-color: white;
-    border-radius: 10px;
-    margin-top: 10px;
     
 }
 
@@ -473,17 +470,11 @@ P.titleol-cadre {
     display: inline-block;
     vertical-align: top;
     width: 40%;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-right: 50px;
     text-align: justify;
     top: 5px;
     white-space: normal;
     font-family: "Inter";
-
-    background-color: rgb(255, 255, 255);
-    border-radius: 10px;
-    margin-top: 10px;
-    margin-left: 10px;
 
 }
 
@@ -494,16 +485,10 @@ P.titleol-cadre {
     vertical-align: top;
     width: 40%;
     /* left: -5px; */
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 50px;
     text-align: justify;
     white-space: normal;
     font-family: "Inter";
-
-    background-color: rgb(255, 255, 255);
-    border-radius: 10px;
-    margin-top: 10px;
-    margin-left: 10px;
 }
 
 
