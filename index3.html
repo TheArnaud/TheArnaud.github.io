@@ -1,436 +1,294 @@
 <!DOCTYPE html>
 <html>
     <head>
+    <link rel="shortcut icon" href="logo"/> 
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Préparation Concours Enseignement Supérieur : Sésame, Accès, Sciences Po. Paris et Province.</title>
+	<meta name="Robots" content="ALL"/>
+	<meta name="Description" content="PCES Optimum : Institut d'Enseignement Supérieur spécialisé dans la préparation au concours d'entrée à SCIENCES PO et aux concours d'entrée aux écoles de commerce SESAME et ACCES."/>
+
+	<meta name="Keywords" content="Concours Sésame, Sésame, préparation, Prépa Sésame, PCES, Optimum, Préparation Concours Enseignement Supérieur, Stage préparation Sciences-Po, stage Sciences-Po, Préparer concours Sciences-Po, Préparation Intensive Sciences-Po, Passerelle, Tremplin, Entrainement Sciences-Po, Epreuves Sciences-Po, Réussir test Sciences-Po, Admissions Sciences-Po, Intégrer Passerelle et Tremplin, Résultats Sciences-Po, Statistiques Préparations Sciences-Po, Banque d'Epreuves Sciences-Po, préparation sciences po, stages préparation sciences po, prépa sciences po, IEP, Concours Accès, Accès, Stage préparation Accès, stage Accès, Préparation Intensive Accès, Entrainement Accès, Epreuves Accès, Accès,  Inscription Sciences-Po, Méthodologie, enseignants, Etudiants, Sciences-Po, Sciences-Po Paris, Sciences-Po Province"/>
+	<meta name="Author" content="Optimum"/>
+
+     <!-- boostrap-->
+	 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	
     
-        <title>Préparation Concours Enseignement Supérieur : Sésame, Accès, Sciences Po. Paris et Province.</title>
-        <meta name="Robots" content="ALL"/>
-        <meta name="Description" content="PCES Optimum : Institut d'Enseignement Supérieur spécialisé dans la préparation au concours d'entrée à SCIENCES PO et aux concours d'entrée aux écoles de commerce SESAME et ACCES."/>
-        <meta name="Keywords" content="Concours Sésame, Sésame, préparation, Prépa Sésame, PCES, Optimum, Préparation Concours Enseignement Supérieur, Stage préparation Sciences-Po, stage Sciences-Po, Préparer concours Sciences-Po, Préparation Intensive Sciences-Po, Passerelle, Tremplin, Entrainement Sciences-Po, Epreuves Sciences-Po, Réussir test Sciences-Po, Admissions Sciences-Po, Intégrer Passerelle et Tremplin, Résultats Sciences-Po, Statistiques Préparations Sciences-Po, Banque d'Epreuves Sciences-Po, préparation sciences po, stages préparation sciences po, prépa sciences po, IEP, Concours Accès, Accès, Stage préparation Accès, stage Accès, Préparation Intensive Accès, Entrainement Accès, Epreuves Accès, Accès,  Inscription Sciences-Po, Méthodologie, enseignants, Etudiants, Sciences-Po, Sciences-Po Paris, Sciences-Po Province"/>
-        <meta name="Author" content="Optimum"/>
+	<link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
-        <link rel="stylesheet" media="screen" type="text/css" href="css/index3.css" />
+	<link rel="stylesheet" media="screen" type="text/css" href="css/style3.css" />
+	<link rel="stylesheet" media="screen" type="text/css" href="css/slideshow.css" />
 
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins"> <!-- font google-->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">   <!-- font google-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins"> <!-- font google-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">   <!-- font google-->
 
-        <!-- boostrap-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-        <!-- MDB -->
-        <link
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-          rel="stylesheet"
-        />
-        <!-- Google Fonts -->
-        <link
-          href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-          rel="stylesheet"
-        />
-                <link
-          href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.css"
-          rel="stylesheet"
-        />
-    
-        <style>
-            body {
+	<style>
+        body {
               font-family: 'Poppins', serif;
               background-color: #EDEDED;
             }
-        </style>
+    </style>
+	
+
 
     </head>
 
     <body>
+	<div id="header">
+		<div id="banniere">
+			<a href="/pages/presentation/main/main.html">
+				<img src="img/banniereSITE2.jpg" alt="Optimum - Préparation Concours Enseignement supérieur."/>
+			</a>
+		</div>
 
-      <nav class="navbar navbar-expand-lg navbar-custom">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#" id="PCES">PCES</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" style="text-align:center" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item dropdown">
-                <a class="nav-link" href="test.html" class="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Sésame - Accès
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#">Sésame</a>
-                  <a class="dropdown-item" href="#">Accès</a>
-                  <a class="dropdown-item" href="#">Pass-Ecricome</a>
-                  <a class="dropdown-item" href="#">Les Enseignants</a>
-                </div>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link" href="#" class="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Science PO
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#">Le concours</a>
-                  <a class="dropdown-item" href="#">Prépa Annuelle</a>
-                  <a class="dropdown-item" href="#">Stage à distance</a>
-                  <a class="dropdown-item" href="#">Les Enseignants</a>
+		<div id="menu1">
+			<ul>
+				<li style="text-align:left"><a href="pages/presentation/main/main.html" style="position:relative; left:6px">Présentation</a></li>
 
-                </div>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link" href="#" class="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Ingénieurs
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#">Ecole Ingénieurs</a>
-                  <a class="dropdown-item" href="#">Les Stages</a>
-                  <a class="dropdown-item" href="#">Les Enseignants</a>
-                  <a class="dropdown-item" href="#">Inscription</a>
-                </div>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link" href="#" class="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Prépa supérieur
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#">Première</a>
-                  <a class="dropdown-item" href="#">Terminale</a>
+				<li><a href="pages/sesame/sesame/main.html">Sésame Accès</a>
+					<ul>
+						<li class="top"><a href="pages/sesame/sesame/main.html">Sésame</a></li>
+						<li><a href="pages/sesame/acces/main.html">Accès</a></li>
+						<li><a href="pages/sesame/autres/main.html" style="font-size:12pt">Pass-Ecricome</a></li>
+						<li><a href="pages/sesame/enseignants/main.html">Les Enseignants</a></li>
+						<li class="bottom"><a href="pages/sesame/stages/main.html">Les Stages</a></li>
+					</ul>
+				</li>
+
+				<li class="sciencespo"><a href="pages/sciencespo/concours/main.html">Sciences Po</a>
+					<ul>
+						<li class="top"><a href="pages/sciencespo/concours/main.html">Le Concours</a></li>
+						<li><a href="pages/sciencespo/preparation/main.html" >Prépa Annuelle</a></li>
+						<li style="font-size:11pt;"><a href="pages/sciencespo/stages/main.html" >Stage à distance</a></li>
+						<li class="bottom"><a href="pages/sciencespo/enseignants/main.html" >Les Enseignants</a></li>
+					</ul>
+				</li>
+
+				<li class="ingenieurs"><a href="pages/ingénieurs/ecolesingenieurs/main.html">Ingénieurs</a>
+					<ul>
+						<li style="font-size:11pt;" class="top"><a href="pages/ingénieurs/ecolesingenieurs/main.html">Ecoles Ingénieurs </a></li>
+						<li><a href="pages/ingénieurs/stages/main.html">Les Stages</a></li>
+  						<li><a href="pages/ingénieurs/lesenseignants/main.html">Les Enseignants</a></li>
+						<li class="bottom"><a href="pages/inscriptions/ingenieurs/main.html">Inscriptions</a></li>                     
+					</ul>
+				</li>
+
+				<li class="preparationbac"><a href="pages/ingénieurs/prepasuperieur/terminale/main.html">Prépa Supérieur</a>
+					<ul>
+					<li class="top" class="bottom"><a href="pages/ingénieurs/prepasuperieur/premiere/main.html">Première</a></li>	
+					<li class="bottom"><a href="pages/ingénieurs/prepasuperieur/terminale/main.html">Terminale</a></li>
+						
+                        
+					</ul>
+				</li>
+
+				<li><a href="pages/inscriptions/sesame/main.html">Inscriptions</a>
+					<ul>
+						<li class="top"><a href="pages/inscriptions/sesame/main.html">Sésame Accès</a></li>
+						<li><a href="pages/inscriptions/siencespo/main.html">Sciences Po</a></li>
+                        <li><a href="pages/inscriptions/ingenieurs/main.html">Ingénieurs</a></li>
+                        <li class="bottom"><a href="pages/inscriptions/prepasuperieur/main.html">Prépa Supérieur</a></li>
+                        
+                        
+					</ul>
+				</li>
+
+				<li style="border-right:none;"><a href="pages/contact/main/main.html" style="position:relative; left:10px">Contact</a></li>
+			</ul>
+		</div>
+		<div id="slides">
+		<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+			
+			<div class="carousel-inner">
+			  <div class="carousel-item active" data-bs-interval="3000">
+				<img src="img/slides/slide4.png" class="d-block w-100" alt="...">
+			
+			  </div>
+			  <div class="carousel-item" data-bs-interval="3000">
+				<img src="img/slides/sciencespo.png" class="d-block w-100" alt="...">
+			 
+			  </div>
+			  <div class="carousel-item " data-bs-interval="3000">
+				<img src="img/slides/slide2.jpg" class="d-block w-100" alt="...">
+				
+			  </div>
+			  <div class="carousel-item " data-bs-interval="3000">
+				<img src="img/slides/slide.png" class="d-block w-100" alt="...">
+				
+			  </div>
+			  <div class="carousel-item " data-bs-interval="3000">
+				<img src="img/slides/slide1.png" class="d-block w-100" alt="...">
+				
+			  </div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+			  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			  <span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+			  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			  <span class="visually-hidden">Next</span>
+			</button>
+		  </div>
+		</div>
+		<img class="sciencespo" src="img/slides/sciencespo.png" alt=""/>
+	</div>
+
+
+
+<div id="corps">
+	<div id="titre">
+		Présentation
+	</div>
+
+	<div class="contenir">
+	<div id="ssm-gauche">
+	<h2 >L'établissement</h2>	
+		<p>
+		Notre établissement est un organisme d'Enseignement Supérieur spécialisé dans la préparation à trois types de concours : 
+        </p>
+        
+        <ul><li>Les concours des Ecoles de Commerce post-baccalauréat : SESAME et ACCES.</li>
+        <li>Les concours des écoles d'ingénieurs post-baccalauréat : ADVANCE, PUISSANCE ALPHA, AVENIR et GEIPI POLYTECH.</li>
+        <li>Le concours de Sciences Po Paris et des IEP de Régions.</li>
+        
+        </ul>
+        
+		<p>
+			Notre expertise repose sur une équipe de professeurs d’exception. Ces derniers ont une connaissance approfondie des épreuves, de l’esprit des concours et des attentes des correcteurs.
+		</p>
+		<p>
+			Ils enseignent à Sciences Po, en Ecoles de Commerce, en Ecoles d'Ingénieurs,  et en classes préparatoires.
+		</p>
+		<p>
+			Depuis des années, ils encadrent des centaines d’étudiants et sont sélectionnés sur la base des diplômes les plus prestigieux (agrégation, Ecole Normale Supérieure, Sciences Po) mais aussi en fonction de leur capacité à faire progresser les élèves et à transmettre le savoir de façon efficace. Ces derniers éléments se mesurent chaque année par les taux de réussite aux différents concours et par les appréciations portées par les élèves eux-mêmes.
+		</p>
+		<p>
+			La méthodologie que nous mettons en place permet aux étudiants de :
+		</p>
+		<ol style="font-weight:bold">
+			<li><p style="font-weight:normal">Faire face à tout type de sujets</p></li>
+			<li><p style="font-weight:normal">Appréhender chaque épreuve avec méthode, confiance et sérénité</p></li>
+			<li><p style="font-weight:normal">Eviter de tomber dans les pièges classiques</p></li>
+			<li><p style="font-weight:normal">Maximiser leurs notes aux concours</p></li>
+		</ol>
+		<p>
+			Nos méthodes de travail permettent une forte interaction élève-enseignant qui assure des progrès visibles et durables.<br />
+
+			Nous avons également une forte culture du résultat. Notre ambition est d´accompagner les étudiants aux portes du succès et de leur permettre d´intégrer l&#039école de leur choix. Pour cela, nous les encadrons de la préparation aux écrits (phase d´admissibilité) jusqu&#039au dernier jour des oraux (admission).
+		</p>
+		<p>
+			Pour ce faire, les préparations sont systématiquement encadrées par des professeurs qui font référence sur les concours :
+		</p>
+		<p style="border: 1px solid #660000; padding:5px; margin:30px;">
+			<span style="color:#660000"><b>La préparation Sciences Po</b></span> est coordonnée par un professeur diplômé de Sciences Po Paris, qui y enseigne également depuis 15 ans. Il a préparé des centaines d’étudiants aux concours et le taux de réussite de ses élèves est réellement exceptionnel. Il a par ailleurs écrit plus d’une vingtaine d’ouvrages de référence sur la préparation des concours de l’Enseignement Supérieur et tout particulièrement Sciences Po.
+		</p>
+		<p style="border: 1px solid #660000; padding:5px; margin:30px">
+			<span style="color:#660000"><b>La préparation Sésame/Accès</b></span> est coordonnée par un professeur diplômé d’Ecole de Commerce, qui connait les moindres détails des concours. Il donne aux élèves l’ «esprit concours» et la méthode qui permettent d’assurer des taux de réussite aussi élevés année après année. 
+		</p>
+		
+               
+	</div>
+
+
+
+	<div id="ssm-droite" style="border-left:1px solid #000">
+		<h2 >Une Méthodologie, des Résultats</h2>
+		<p>
+			Les résultats obtenus par nos étudiants nous positionnent en tête des classements Sésame/Accès et Sciences Po.
+		</p>
+		
+		<b>Ces résultats sont le fruit des 4 facteurs qui font la spécificité de nos préparations :</b><br><br>
+		
+        <ol style="padding-left:0">
+			<li class="compt">
+				<p class="titleol"><b>La Spécialisation </b>
+				<p>
+					Nous ne préparons qu'à trois types de concours : les Ecoles de Commerce, les Ecoles d'Ingénieurs et Sciences Po. <b>Se spécialiser est un choix :</b> celui de l'excellence qui rend nos préparations totalement ciblées sur ces concours.
+				</p>
+			</li>
+			<li class="compt">
+				<p class="titleol"><b>Un Enseignement d'Excellence </b>
+				<p>
+					Les professeurs qui interviennent dans nos stages ont :
+				</p>
+				<ul>
+					<li>une connaissance approfondie des épreuves</li>
+					<li>enseignent en classes préparatoires et dans les Grandes Ecoles</li>
+    					
+					<li><b>sont des spécialistes reconnus de leurs matières</b></li>
+				</ul>
+				<p>
+					Ils sont reconnus pour leurs compétences mais aussi pour leur capacité à faire passer le savoir.</ul>
+				</p>
+			</li>
+			<li class="compt">
+				<p class="titleol"><b>La Proximité de l'Encadrement </b>
+				<p>
+					Les élèves ne peuvent donner le meilleur de leurs capacités que s'ils sont guidés et suivis. Cela passe par une forte disponibilité des enseignants et de l'ensemble de notre équipe pédagogique et administrative.
+				</p>
+				<p>
+					Tout est fait pour que les élèves optimisent leurs chances de succès.
+				</p>
+				<p>
+					A titre d’exemple, les élèves ont les coordonnées de leurs professeurs et peuvent les joindre pendant toute la durée de leur préparation et même au-delà. Chaque préparation est coordonnée par un professeur "référent" qui est le point de contact des élèves et des parents.
+				</p>
+					
+			</li>
+			<li class="compt">
+				<p class="titleol"><b>Le Suivi </b>
+				<p>
+					Le support apporté aux élèves ne se réduit pas aux périodes de stages ou au cours. Les élèves sont suivis du jour où ils ont décidé de présenter les concours jusqu&#039au jour des résultats.<br />
+					Ce suivi se présente sous diverses formes (toujours optionnelles bien évidemment) : 
+				</p>
+				<ul>
+					<li>
+						Rendez-vous avec les responsables des concours.
+					</li>
+					<li>
+						Ciblage des forces et faiblesses.
+					</li>
+					<li>
+						Suivi des progrès et plan d’action par rapport aux difficultés spécifiques des élèves.
+					</li>
+					<li>
+						Devoirs supplémentaires d’entraînement, y compris pour les (très) bons élèves de sorte à maximiser les notes aux concours.
+					</li>
+					<li>
+						Apports méthodologiques.
+					</li>
+					<li>
+						Conseil dans l’organisation du travail. 
+					</li>
+					<li>
+						Travail pour améliorer la confiance en soi. 
+					</li>
+					<li>
+						Accompagnement tout au long de l’année, du début de la préparation jusqu’au jour des résultats.
+					</li>
+				</ul>
+					</li>
+		</ol>
+     <br> <div style='text-align: center;'><img src="img/resultat17.jpg" alt="résultats Sesame/Acces" style="top:20px" /></div>
+	  
+   
             
-                </div>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link" href="#" class="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Inscription
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#">Sésame</a>
-                  <a class="dropdown-item" href="#">Accès</a>
-                  <a class="dropdown-item" href="#">Première</a>
-                  <a class="dropdown-item" href="#">Terminale</a>
-                </div>
-              </li>
-              <li class="nav-item" style="padding-left: 44vw;">
-                
-                <a class="nav-link" href="contact.html">
-                  <span class="fa-stack fa-1.5x">
-                    <i class="fa-solid fa-circle fa-stack-2x"></i>
-                    <i class="fa-solid fa-envelope fa-stack-1x fa-inverse" style="color:#880000"></i>
-                  </span>
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
+            
         </div>
-      </nav>
-        
+</div>
 
-        <div class="container excellez">
-          <div class="row">
-            <div class="col-5 excellezLEFT">
-              Excellez avec les meilleurs professeurs<br>
-            </div>
-            <div class="col-6 excellezRIGHT">
-              <img src="img/lionG.jpg" class="img-fluid" style="position: relative; left:5%;bottom:11.5%;"/>
-            </div>
-        </div>
+<div id="footer">
+			<p>PCES - Préparation Concours Enseignement Supérieur</p>
+			<ul>
+				<li><a href="index.php?part=conditions&sub=mentions">Mentions légales</a></li></ul>
+				
+		</div>
 
-        <div class="container excellezSOUS" style="font-family : Inter">
-          <div class="row">
-            <div class="col-4">
-            Établissement privé d’enseignement supérieur enregistré au Rectorat de Paris <br>
-            Préparation aux concours et accompagnement scolaire du lycée aux classes prépas
-            </div>
-          </div>
-        </div>
-
-        <div class="container stats text-center">
-          <div id="titreRésultat">
-            Résultat 2021 :
-          </div>
-          <div class="row text-center">
-            <div class="col-4 excellezLEFT">
-              <div id="ecole1">IESEG - ESSCA - ESSEC</div>
-              <div id="stat1" class="fa-bounce">94%<br>d'admis</div>
-            </div>
-            <div class="col-4 excellezRIGHT">
-              <div id="ecole3">SESAME/ACCES</div>
-              <div id="stat3" class="fa-bounce">97%<br>d'admis</div>
-            </div>
-            <div class="col-4">
-              <div class="container" id="ecole2">Science Politique</div>
-              <div id="stat2" class="fa-bounce">71%<br>d'admis</div>
-            </div>
-        </div>
-
-
-        <div class="container mainTitre">
-          Présentation
-        </div>
-
-        <div class="container présentation" style="font-family : Inter">
-          <div class="row">
-            <div class="col-6 présentationLEFT">
-              <span class="soustitres">L'établisemment :</span>
-              <br><br>
-              Notre établissement est un organisme d'Enseignement Supérieur spécialisé
-              dans la préparation à trois types de concours : <br>
-              <ul style="padding-top:3%">
-                <li>Les concours des Ecoles de Commerce post-baccalauréat : SESAME et ACCES.</li>
-                <li>Les concours des écoles d'ingénieurs post-baccalauréat : ADVANCE, PUISSANCE ALPHA, AVENIR et GEIPI POLYTECH.</li>
-                <li>Le concours de Sciences Po Paris et des IEP de Régions.</li>
-              </ul>
-              Notre expertise repose sur une équipe de professeurs d’exception. 
-              Ces derniers ont une connaissance approfondie des épreuves, de l’esprit des concours et des attentes des correcteurs.
-              <br><br>
-              Ils enseignent à Sciences Po, en Ecoles de Commerce, en Ecoles d'Ingénieurs, et en classes préparatoires.
-              <br><br>
-              Depuis des années, ils encadrent des centaines d’étudiants et sont sélectionnés 
-              sur la base des diplômes les plus prestigieux (agrégation, Ecole Normale Supérieure, Sciences Po) 
-              mais aussi en fonction de leur capacité à faire progresser les élèves et à transmettre le savoir de façon efficace. 
-              Ces derniers éléments se mesurent chaque année par les taux de réussite aux différents concours
-              et par les appréciations portées par les élèves eux-mêmes.<br><br>
-              La méthodologie que nous mettons en place permet aux étudiants de : <br><br>
-              <ol style="font-weight:bold">
-                <li><p style="font-weight:normal">Faire face à tout type de sujets</p></li>
-                <li><p style="font-weight:normal">Appréhender chaque épreuve avec méthode, confiance et sérénité</p></li>
-                <li><p style="font-weight:normal">Eviter de tomber dans les pièges classiques</p></li>
-                <li><p style="font-weight:normal">Maximiser leurs notes aux concours</p></li>
-              </ol>
-
-              Nos méthodes de travail permettent une forte interaction élève-enseignant qui assure des progrès visibles et durables.<br>
-              Nous avons également une forte culture du résultat. Notre ambition est <br>d'accompagner les étudiants aux portes du succès 
-              et de leur permettre<br>d'intégrer l'école de leur choix. Pour cela, nous les encadrons de la préparation aux écrits (phase d´admissibilité) 
-              jusqu'au dernier jour des oraux (admission).
-              <br><br>
-              Pour ce faire, les préparations sont systématiquement encadrées par des professeurs qui font référence sur les concours :
-              <p style="border: 1px solid #660000; padding:5px; margin:30px;">
-                <span style="color:#660000"><b>La préparation Sciences Po</b></span> est coordonnée par un professeur diplômé de Sciences Po Paris, qui y enseigne également depuis 15 ans. Il a préparé des centaines d’étudiants aux concours et le taux de réussite de ses élèves est réellement exceptionnel. Il a par ailleurs écrit plus d’une vingtaine d’ouvrages de référence sur la préparation des concours de l’Enseignement Supérieur et tout particulièrement Sciences Po.
-              </p>
-              <p style="border: 1px solid #660000; padding:5px; margin:30px">
-                <span style="color:#660000"><b>La préparation Sésame/Accès</b></span> est coordonnée par un professeur diplômé d’Ecole de Commerce, qui connait les moindres détails des concours. Il donne aux élèves l’ «esprit concours» et la méthode qui permettent d’assurer des taux de réussite aussi élevés année après année. 
-              </p>
-
-            </div>
-            <div class="col-6" style="font-family : Inter;font-size: 1vw;">
-              <span class="soustitres">Méthodologie & Résultats</span>
-              <br><br>
-              <div id="ssm-droite">
-                <p>
-                  Les résultats obtenus par nos étudiants nous positionnent en tête des classements Sésame/Accès et Sciences Po.
-                </p>
-                
-                <b>Ces résultats sont le fruit des 4 facteurs qui font la spécificité de nos préparations :</b>
-                
-                    <ol>
-                  <li class="compt">
-                    <p class="titleol"><b>La Spécialisation </b>
-                    </p><p>
-                      Nous ne préparons qu'à trois types de concours : les Ecoles de Commerce, les Ecoles d'Ingénieurs et Sciences Po. <b>Se spécialiser est un choix :</b> celui de l'excellence qui rend nos préparations totalement ciblées sur ces concours.
-                    </p>
-                  </li>
-                  <li class="compt">
-                    <p class="titleol"><b>Un Enseignement d'Excellence </b>
-                    </p><p>
-                      Les professeurs qui interviennent dans nos stages ont :
-                    </p>
-                    <ul>
-                      <li>une connaissance approfondie des épreuves</li>
-                      <li>enseignent en classes préparatoires et dans les Grandes Ecoles</li>
-                          
-                      <li><b>sont des spécialistes reconnus de leurs matières</b></li>
-                    </ul>
-                    <p>
-                      Ils sont reconnus pour leurs compétences mais aussi pour leur capacité à faire passer le savoir.
-                    </p>
-                  </li>
-                  <li class="compt">
-                    <p class="titleol"><b>La Proximité de l'Encadrement </b>
-                    </p><p>
-                      Les élèves ne peuvent donner le meilleur de leurs capacités que s'ils sont guidés et suivis. Cela passe par une forte disponibilité des enseignants et de l'ensemble de notre équipe pédagogique et administrative.
-                    </p>
-                    <p>
-                      Tout est fait pour que les élèves optimisent leurs chances de succès.
-                    </p>
-                    <p>
-                      A titre d’exemple, les élèves ont les coordonnées de leurs professeurs et peuvent les joindre pendant toute la durée de leur préparation et même au-delà. Chaque préparation est coordonnée par un professeur "référent" qui est le point de contact des élèves et des parents.
-                    </p>
-                      
-                  </li>
-                  <li class="compt">
-                    <p class="titleol"><b>Le Suivi </b>
-                    </p><p>
-                      Le support apporté aux élèves ne se réduit pas aux périodes de stages ou au cours. Les élèves sont suivis du jour où ils ont décidé de présenter les concours jusqu'au jour des résultats.<br>
-                      Ce suivi se présente sous diverses formes (toujours optionnelles bien évidemment) : 
-                    </p>
-                    <ul>
-                      <li>
-                        Rendez-vous avec les responsables des concours.
-                      </li>
-                      <li>
-                        Ciblage des forces et faiblesses.
-                      </li>
-                      <li>
-                        Suivi des progrès et plan d’action par rapport aux difficultés spécifiques des élèves.
-                      </li>
-                      <li>
-                        Devoirs supplémentaires d’entraînement, y compris pour les (très) bons élèves de sorte à maximiser les notes aux concours.
-                      </li>
-                      <li>
-                        Apports méthodologiques.
-                      </li>
-                      <li>
-                        Conseil dans l’organisation du travail. 
-                      </li>
-                      <li>
-                        Travail pour améliorer la confiance en soi. 
-                      </li>
-                      <li>
-                        Accompagnement tout au long de l’année, du début de la préparation jusqu’au jour des résultats.
-                      </li>
-                    </ul>
-                      </li>
-                </ol>
-                 <br> <div style="text-align: center;"><img src="img/resultat17.jpg" class="img-fluid" alt="résultats Sesame/Acces" style="top:20px"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-
-        <section style="color: #000; background-color: #EDEDED;margin-top:3%;">
-          <div class="container py-5">
-            <div class="row d-flex justify-content-center">
-              <div class="col-md-10 col-xl-8 text-center">
-                <h3 class="fw-bold mb-4">Témoignages</h3>
-                <p class="mb-4 pb-2 mb-md-5 pb-md-0">
-                  Les avis de nos élèves
-                </p>
-              </div>
-            </div>
-        
-            <div class="row text-center">
-              <div class="col-md-4 mb-4 mb-md-0">
-                <div class="card">
-                  <div class="card-body py-4 mt-2">
-                    <p class="mb-2">
-                      <i class="fas fa-quote-left pe-2"></i>Lorem ipsum dolor sit amet,
-                      consectetur adipisicing elit. Quod eos id officiis hic tenetur quae quaerat.
-                    </p>
-
-                    <ul class="list-unstyled d-flex justify-content-center">
-                      <li>
-                        <i class="fas fa-star fa-sm text-warning"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star fa-sm text-warning"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star fa-sm text-warning"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star fa-sm text-warning"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star-half-alt fa-sm text-warning"></i>
-                      </li>
-                    </ul>
-                  
-                    <h5 class="font-weight-bold">Teresa May</h5>
-                    <h6 class="font-weight-bold my-3">Science Po Paris</h6>
-              
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 mb-4 mb-md-0">
-                <div class="card">
-                  <div class="card-body py-4 mt-2">
-                    <p class="mb-2">
-                      <i class="fas fa-quote-left pe-2"></i>Autem, totam debitis suscipit saepe
-                      sapiente magnam officiis quaerat necessitatibus.
-                    </p>
-
-                    <ul class="list-unstyled d-flex justify-content-center">
-                      <li>
-                        <i class="fas fa-star fa-sm text-warning"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star fa-sm text-warning"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star fa-sm text-warning"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star fa-sm text-warning"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star fa-sm text-warning"></i>
-                      </li>
-                    </ul>
-                    
-                    <h5 class="font-weight-bold">Maggie McLoan</h5>
-                    <h6 class="font-weight-bold my-3">HEC</h6>          
-                  
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 mb-0">
-                <div class="card">
-                  <div class="card-body py-4 mt-2">
-                    <p class="mb-2">
-                      <i class="fas fa-quote-left pe-2"></i>Cras sit amet nibh libero, in gravida
-                      nulla metus scelerisque ante sollicitudin commodo cras purus odio.
-                    
-                    </p>
-
-                    <ul class="list-unstyled d-flex justify-content-center">
-                      <li>
-                        <i class="fas fa-star fa-sm text-warning"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star fa-sm text-warning"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star fa-sm text-warning"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star fa-sm text-warning"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star fa-sm text-warning"></i>
-                      </li>
-                    </ul>
-
-                    <h5 class="font-weight-bold">Alexa Horwitz</h5>
-                    <h6 class="font-weight-bold my-3">ESSCA</h6>
-  
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-
-        <div class="container footer">
-          <footer class="py-3 my-4">
-            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Accueil</a></li>
-              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Sésame-Accés</a></li>
-              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Science Po</a></li>
-              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Ingénieurs</a></li>
-              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Prépa supérieur</a></li>
-              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Inscription</a></li>
-              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contact</a></li>
-
-            </ul>
-            <p class="text-center text-muted">© 2022 PCES</p>
-          </footer>
-        </div>
-
-      <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.js"></script>       
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.js"></script>       
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
-    </body>
+	</body>
 </html>
