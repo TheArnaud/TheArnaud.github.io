@@ -444,9 +444,7 @@ P.titleol-cadre {
     text-align: justify;
     position: relative;
     font-family: "Inter";
-    left: -4px;
     white-space: normal;
-
     background-color: white;
     border-radius: 10px;
     margin-top: 10px;
@@ -464,6 +462,11 @@ P.titleol-cadre {
     white-space: normal;
     font-family: "Inter";
     
+}
+
+.stageCOMPLET{
+    color:#c50808; 
+    font-weight:900;
 }
 
 
