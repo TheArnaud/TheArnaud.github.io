@@ -4,13 +4,15 @@ body {
     background: #E0E0E0;
     margin: auto;
     width: 1000px;
+    line-height: normal;
+
 }
 
 
 /****************** Design du header *********************/
 
 #header {
-    height: 377px;
+    height: 336px;
 }
 
 #banniere {
@@ -102,7 +104,10 @@ a img {
     width: 1000px;
     position: relative;
     top: -16px;
+
 }
+
+
 
 
 /* Pour les résultats */
@@ -217,6 +222,10 @@ p {
     margin-bottom: 15px;
     border-radius: 2%;
     padding-bottom: 2%;
+
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
     
 }
 
@@ -234,10 +243,13 @@ p {
 .flex{
     display : flex;
     justify-content: left;
+    justify-content: space-around;
+
 }
 
 .contenirSESAME{
-
+    display: flex;
+    align-items: stretch;
 }
 
 #corps {
