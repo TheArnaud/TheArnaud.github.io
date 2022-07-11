@@ -265,7 +265,7 @@ p {
 #ssm-gauche h1,
 #ssm-gauche h2 {
     color: #880000;
-    text-align: left;
+    text-align: center;
 }
 
 #acm-mid h1,
@@ -279,7 +279,7 @@ p {
 #ssm-droite h1,
 #ssm-droite h2 {
     color: #000066;
-    text-align: right;
+    text-align: center;
 }
 
 
@@ -463,6 +463,13 @@ P.titleol-cadre {
 .stageCOMPLET{
     color:#c50808; 
     font-weight:900;
+}
+
+.titreSTAGE{
+    font-size: 27px;
+    font-weight: bold;
+    margin-top:20px;
+    margin-bottom: 27px;
 }
 
 
