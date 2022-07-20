@@ -724,3 +724,9 @@ P.titleol-cadre {
       margin-bottom: 16px; /* Bottom margin */
       resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
   }
+
+/*********************   **********************/
+
+#bleu li.compt:before {
+    background: #000066;
+}
