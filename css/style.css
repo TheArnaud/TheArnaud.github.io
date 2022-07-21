@@ -699,6 +699,11 @@ P.titleol-cadre {
     width: 30%;
     opacity: 0.9;
   }
+
+  .registerbtn2:hover {
+    opacity:1;
+  }
+  
   
   .registerbtn:hover {
     opacity:1;
