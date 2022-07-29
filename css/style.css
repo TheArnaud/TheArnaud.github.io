@@ -735,3 +735,46 @@ P.titleol-cadre {
 #bleu li.compt:before {
     background: #000066;
 }
+
+
+/********************* carousel livres  **********************/
+
+
+.carousel-indicators [data-bs-target] {
+    width: 20px;
+    height: 8.5px;
+    border-radius: 50%;
+}
+
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    background-color: rgb(255, 255, 255);
+    height:80px;
+    width :50px;
+    top:160px;
+    border-radius: 3px 3px 3px 3px;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 4rem;
+    height: 2rem;
+}
+
+
+.carousel-control-next:hover,
+.carousel-control-prev:hover /*, .carousel-indicators */ {
+    filter: invert(100%);
+    transition: .6s ease;
+}
+
+.shadowe{                         /*, pour que l'ombre des livres ne rentre pas en colision avec l'encadré des fleches*/
+    position: relative;
+    z-index: 10;
+}
+.shadowe:hover{
+    box-shadow: 0 0 25px 2px #524e4e;
+}
+
+#slides .carousel-item {
+    transition: transform 0s ease-in-out;
+  }
