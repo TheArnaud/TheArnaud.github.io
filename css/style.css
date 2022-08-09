@@ -1008,7 +1008,7 @@ a {
     border-radius: 50%;
     border: 1px solid #ccc; }
   .site-block-27 ul li.active a, .site-block-27 ul li.active span {
-    background: #e3c4a8;
+    background: #4575a9;
     color: #fff;
     border: 1px solid transparent; }
 
@@ -1828,3 +1828,7 @@ figure figcaption {
     width:100%;
     position:absolute;
    }
+
+ .CarouselGalerie a{
+  color:#4575a9;
+ }  
