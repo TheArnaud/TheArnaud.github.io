@@ -1832,3 +1832,20 @@ figure figcaption {
  .CarouselGalerie a{
   color:#4575a9;
  }  
+
+ #caption{
+  color: #4575a9 !important;
+ }
+
+
+ #caption:hover{
+  color: #102741 !important;
+ }
+
+#thanks {
+  color:#4575a9 !important;
+}
+
+#thanks:hover{
+  color: #0c5bb4 !important;
+ }
