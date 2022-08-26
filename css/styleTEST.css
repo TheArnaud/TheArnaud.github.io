@@ -1,0 +1,376 @@
+body{
+    background-color: #EDEDED;
+    line-height: normal;
+    
+}
+
+#header{
+    background-color: #880000;
+}
+
+#header a {
+    color:white!important;
+    text-decoration: none!important;
+}
+
+   /****************************************** header ********************************/
+
+.nav{
+    color:white;
+    font-variant: small-caps;
+}
+
+.gras{
+    font-weight: 700;
+}
+
+
+#subtitle{
+    font-size: 0.55rem;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top:0.5rem;
+}
+
+.barre{
+    display : flex;
+    justify-content:space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#barreGauche{
+    background-image: -webkit-gradient(
+          linear, center center, left center, from(#948e8e),
+          to(rgba(255, 255, 255, 0))
+        );
+    width: 250px;
+    height: 3px;
+    margin-right:0.5rem;
+   
+}
+
+#barreDroite{
+    background-image: -webkit-gradient(
+          linear, center center, right center, from(#948e8e),
+          to(rgba(255, 255, 255, 0))
+        );
+    width: 250px;
+    height: 3px;
+    margin-left:0.5rem;
+}
+
+@media (width < 1030px) {
+    .title{
+        color:white;
+        font-size:27px;
+        text-align: center;
+        padding-left:2.6rem;
+    }
+
+    #subtitle{
+        font-size:0.8rem;
+    
+    }
+   }
+
+   @media (width > 1030px) {
+    .title{
+        color:white;
+        font-size:3rem;
+        text-align: center;
+    }
+
+    #subtitle{
+        font-size:1rem;
+    
+ 
+    }
+  
+   }
+
+   /****************************************** navbar ********************************/
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+
+ }
+
+.navbar-custom .navbar-nav .nav-link {
+        color: rgb(255, 255, 255);
+        border-right: 1.5px solid #6e6a6a;
+    }
+
+.navbar-custom .nav-item:hover .nav-link {
+        color: #e60000!important;
+}
+
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url(
+    "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+
+.navbar-nav.navbar-center {
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    font-size: 1.2rem;
+    }
+
+    .navbar {
+        background: url('../img/menu1/menu.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:center;
+        
+
+    }
+
+    .navbar .dropdown-menu{
+        background: url('../img/menu1/menu_ss_pointille.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:center;
+        color:white;
+        
+    }
+
+    .navbar .dropdown-menu a{
+        color:white;
+    }
+
+    .navbar .dropdown-menu a:hover{
+        color:red;
+    }
+
+    @media (width < 1030px) {
+        .navbar-nav.navbar-center {
+            font-size: 16px;
+        }
+    }
+
+
+   /****************************************** TITRE PARTIE ********************************/
+
+#titrePartie {
+    background: url(../img/titre.jpg);
+    color:white;
+    background-repeat:no-repeat;
+    background-size: cover;
+    padding-top:0.5rem;
+    padding-bottom:1px;
+    text-align: left;
+    box-shadow: 0px 2px 2px black;
+    margin-bottom:1.5rem;
+}
+
+   /****************************************** CONTENU ********************************/
+
+.side {
+    background-color: white;
+    border-radius: 10px;
+    justify-content: center;
+    text-align: justify;
+}
+
+ol {
+    counter-reset: compt;
+}
+
+li.compt,
+li.compt-pres {
+    list-style-type: none;
+    counter-increment: compt;
+    margin-bottom: 15px;
+}
+
+
+/*puce a carré */
+
+li.compt:before {
+    content: counter(compt);
+    padding: 5px 11px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    vertical-align: top;
+    font-weight: bold;
+    font-size: 0.8em;
+    color: white;
+    display: inline-block;
+    width: 10px;
+    height: 21px;
+}
+
+.side li.compt:before {
+    background: #000066;
+}
+
+p.titleol,
+p.titleol-cadre {
+    display: inline-block;
+    margin: 0;
+    margin-top: 2px;
+}
+
+@media (width < 1030px) {
+    .side{
+      width:400px!important;
+      font-size:16px!important;
+      text-align: justify;
+      padding:18px!important;
+
+
+    }
+    .titleSide{
+        font-size:26px!important;
+    }
+
+    li.compt:before {
+        content: counter(compt);
+        padding: 3px 11px;
+        margin-right: 5px;
+        margin-bottom: 10px;
+        vertical-align: top;
+        font-weight: bold;
+        font-size: 0.8em;
+        color: white;
+        display: inline-block;
+        width: 8px;
+        height: 21px;
+    }
+
+    .carousel-inner{
+        height:auto;
+    }
+
+    .carousel-inner img{
+        height:auto;
+    }
+
+    .titrePartie{
+        top:2rem;
+    }
+
+}
+
+/********************* Design du Footer **********************/
+
+#footer {
+    position: relative;
+
+    background: url('../img/footer.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    text-align: right;
+    padding-top: 13px;
+    padding-bottom: 1px;;
+}
+
+#footer p {
+    float: left;
+    position: relative;
+    left: 20px;
+    top: 4px;
+    color: #fff;
+    font-size: 0.8rem;
+}
+
+#footer li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.8rem;
+}
+
+#footer li a:hover {
+    text-decoration: underline;
+}
+
+
+/********************* ACM MID **********************/
+
+
+#acm-mid {
+    display: inline-block;
+    width: 720px;
+    vertical-align: top;
+    padding: 10px;
+    text-align: justify;
+    position: relative;
+    top: 5px;
+    white-space: normal;
+    font-family: "Inter";
+    padding-left: 25px;
+    
+}
+
+@media (width > 1018px) {
+    #acm-mid{
+    }
+    #menu2{
+        
+
+    }
+}
+
+/* Design de l'intérieur du sous-menu */
+
+#menu2 img {
+    height: 45px;
+    width: 177px;
+    border-radius: 10px;
+}
+
+#menu2 img:hover {
+    opacity: .75;
+}
+
+#menu2 {
+    display: inline-block;
+    width: 177px;
+    vertical-align: top;
+    padding-top: 10px;
+    white-space: normal;
+    position: sticky;
+    top: 7px;
+}
+
+#menu2 ul {
+    list-style: none;
+    margin-left:20px;
+}
+
+#menu2 li {
+    display: block;
+    position: relative;
+    left: -40px;
+    /* background-color: #707070; */
+    width: 177px;
+    height: 43px;
+    margin-top: 10px;
+}
+
+
+.titreSTAGE {
+    font-size: 27px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 27px;
+}
+
+
+
+* {
+    -webkit-box-sizing: content-box;
+       -moz-box-sizing: content-box;
+            box-sizing: content-box;
+  }
+  *:before,
+  *:after {
+    -webkit-box-sizing: content-box;
+       -moz-box-sizing: content-box;
+            box-sizing: content-box;
+  }
