@@ -63,7 +63,7 @@ body{
 @media (width < 1030px) {
     .title{
         color:white;
-        font-size:27px;
+        font-size:27.5px;
         text-align: center;
         padding-left:2.6rem;
     }
@@ -72,19 +72,117 @@ body{
         font-size:0.8rem;
     
     }
+
+    #méthodo{
+        font-size:25px;
+    }
    }
 
-   @media (width > 1030px) {
+   @media (width < 980px) {
     .title{
         color:white;
-        font-size:3rem;
+        font-size:25px;
         text-align: center;
+        padding-left:2.6rem;
     }
 
     #subtitle{
-        font-size:1rem;
+        font-size:0.7rem;
     
- 
+    }
+   }
+
+   @media (width < 890px) {
+    .title{
+        color:white;
+        font-size:22px;
+        text-align: center;
+        padding-left:2.6rem;
+    }
+
+    #subtitle{
+        font-size:0.65rem;
+    
+    }
+   }
+
+   @media (width < 430px) {
+
+
+    .title{
+        color:white;
+        font-size:16px;
+        text-align: center;
+        padding-left:10px;
+        padding-right:10px;
+    }
+
+    #subtitle{
+        font-size:0.59rem;
+        padding-top: 0;
+    
+    }
+
+    .barre{
+        width:300px;
+        height: 35px;
+        
+    }
+
+    #barreGauche{
+        width: 40px;
+        height: 1.5px;
+        
+    }
+    
+    #barreDroite{
+        height: 1.5px;
+        width: 40px;
+        
+    }
+    .py-3{
+        padding-bottom:0!important;
+        padding-left: 15px;
+    }
+
+    .carousel-inner img {
+        height: 90px!important;
+    }
+
+    .side{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .titleSide{
+        font-size: 23px!important;
+    }
+    #coloDroite{
+        margin-top:10px!important;
+    }
+
+    #footer li a {
+        font-size: 9px!important;
+        margin-right: 5px;
+    }
+
+    #footer p {
+        font-size: 10px!important;
+    }
+    #titrePartie {
+        margin-bottom:15px!important;
+    }
+
+   }
+
+   @media (width > 1029px) {
+    .title{
+        color:white;
+        font-size:2.5rem;
+        text-align: center;
+    }
+
+    #logo{
+        margin-left: 2vw;;
     }
   
    }
@@ -93,7 +191,8 @@ body{
 
 .dropdown:hover .dropdown-menu {
     display: block;
-    margin-top: 0;
+    margin-top: -5px;
+
 
  }
 
@@ -135,6 +234,17 @@ body{
         background-size: cover;
         background-position:center;
         color:white;
+        border-top: 1px solid #707070;
+        border-radius: 0;
+        
+        
+    }
+
+    .navbar .dropdown-item{
+        text-align: left;
+        border-bottom: 1px solid #707070;
+        width:inherit
+        
         
     }
 
@@ -152,6 +262,10 @@ body{
         }
     }
 
+    .dropdown-menu {
+
+    --bs-dropdown-link-hover-bg:none!important;
+    }
 
    /****************************************** TITRE PARTIE ********************************/
 
@@ -192,7 +306,7 @@ li.compt-pres {
 
 li.compt:before {
     content: counter(compt);
-    padding: 5px 11px;
+    padding: 6px 11px;
     margin-right: 5px;
     margin-bottom: 10px;
     vertical-align: top;
@@ -225,12 +339,12 @@ p.titleol-cadre {
 
     }
     .titleSide{
-        font-size:26px!important;
+        font-size:26px;
     }
 
     li.compt:before {
         content: counter(compt);
-        padding: 3px 11px;
+        padding: 4px 11px;
         margin-right: 5px;
         margin-bottom: 10px;
         vertical-align: top;
@@ -304,6 +418,12 @@ p.titleol-cadre {
     white-space: normal;
     font-family: "Inter";
     padding-left: 25px;
+}
+
+    #acm-mid *, ::after, ::before {
+        
+        box-sizing: unset;
+        
     
 }
 
@@ -336,6 +456,7 @@ p.titleol-cadre {
     white-space: normal;
     position: sticky;
     top: 7px;
+    margin-right:20px;
 }
 
 #menu2 ul {
@@ -361,16 +482,56 @@ p.titleol-cadre {
     margin-bottom: 27px;
 }
 
+@media (width < 430px) {
+    #acm-mid{
+     width:auto!important;
+     padding-left: 0p!important;
+     padding-left:10px;
+    }
+    #menu2{
+        position: unset;
+    }
+    .mid{
+        width:auto!important;
+       }
+    .badge{
+        margin-left:0%!important;
+    }
+
+    .menuDOS{
+        list-style: none;
+        border-radius: 10px;
+        width:100px!important;
+        display: block;
+        padding-left:0px;
+        margin-top: 0px!important;
+    }
+    
+    .menuDOS img{
+        margin-bottom:5px;
+        border-radius: 10px;
+        width:160px!important;
+    }
+
+    #menu2{
+        width:auto!important;
+        display: flex!important;
+        margin-left:50px;
+    }
+    
+}
 
 
-* {
-    -webkit-box-sizing: content-box;
-       -moz-box-sizing: content-box;
-            box-sizing: content-box;
-  }
-  *:before,
-  *:after {
-    -webkit-box-sizing: content-box;
-       -moz-box-sizing: content-box;
-            box-sizing: content-box;
-  }
+
+.menuDOS{
+    list-style: none;
+    border-radius: 10px;
+    margin-left:20px;
+   
+}
+
+.menuDOS img{
+    margin-bottom:5px;
+    border-radius: 10px;
+    width:160px;
+}
