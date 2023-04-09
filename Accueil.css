@@ -162,7 +162,6 @@
   .u-section-1 .u-repeater-1 {
     grid-template-columns: calc(50% - 5px) calc(50% - 5px);
     min-height: 354px;
-    grid-auto-columns: calc(50% - 5px);
   }
 
   .u-section-1 .u-container-layout-2 {
@@ -226,7 +225,6 @@
   .u-section-1 .u-repeater-1 {
     grid-template-columns: 100%;
     min-height: 427px;
-    grid-auto-columns: calc(100% - 0px);
   }
 
   .u-section-1 .u-text-2 {
@@ -261,19 +259,19 @@
 }
 
 .u-section-2 .u-sheet-1 {
-  min-height: 539px;
+  min-height: 588px;
 }
 
 .u-section-2 .u-group-1 {
-  min-height: 443px;
+  min-height: 439px;
   width: 589px;
   height: auto;
   box-shadow: 4px 4px 8px 0px rgba(0,0,0,1);
-  margin: 49px auto 47px;
+  margin: 49px auto 60px;
 }
 
 .u-section-2 .u-container-layout-1 {
-  padding: 60px 46px 48px 60px;
+  padding: 60px 50px 48px 60px;
 }
 
 .u-section-2 .u-text-1 {
@@ -295,11 +293,28 @@
   box-shadow: 2px 2px 8px 0px rgba(128,128,128,1);
   border-style: solid;
   font-weight: 700;
-  margin: 56px auto 0;
-  padding: 8px 36px 9px 35px;
+  margin: 49px auto 0 13px;
+  padding: 8px 28px 9px 27px;
 }
 
 .u-section-2 .u-icon-1 {
+  font-size: 1.6em;
+  padding: 2px;
+}
+
+.u-section-2 .u-btn-2 {
+  background-image: linear-gradient(to right, #19380b, #559838);
+  text-transform: uppercase;
+  font-size: 0.9375rem;
+  letter-spacing: 1px;
+  box-shadow: 2px 2px 8px 0px rgba(128,128,128,1);
+  border-style: solid;
+  font-weight: 700;
+  margin: -59px 8px 0 auto;
+  padding: 8px 19px 9px 17px;
+}
+
+.u-section-2 .u-icon-2 {
   font-size: 1.6em;
   padding: 2px;
 }
@@ -324,7 +339,6 @@
   .u-section-2 .u-group-1 {
     margin-top: 40px;
     margin-bottom: 40px;
-    min-height: 357px;
     margin-right: initial;
     margin-left: initial;
     width: auto;
@@ -342,6 +356,11 @@
 
   .u-section-2 .u-btn-1 {
     margin-top: 48px;
+    margin-left: 4px;
+  }
+
+  .u-section-2 .u-btn-2 {
+    margin-right: 0;
   }
 }
 
@@ -352,6 +371,10 @@
 
   .u-section-2 .u-text-2 {
     font-size: 1.5rem;
+  }
+
+  .u-section-2 .u-btn-1 {
+    margin-left: 0;
   }
 } .u-section-3 {
   background-image: none;
